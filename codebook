@@ -1,0 +1,12 @@
+This script run_analysis.R in order to performs the 5 steps described in the course project's assignment.
+
+At first data is merged using rbind(). Then it is filtered to only those columns with the mean and standard deviation. After extracting these columns, they are given the correct names, taken from features.txt.
+More significant names and labels are used instead of the original ones. Finally a new dataset with all the averages for each subject and activity type is created from previous data. The output file is called tidy_dataset.txt.
+
+Variables used
+x_train, y_train, x_test, y_test, subject_train and subject_test contain the data from the downloaded files.
+x_data, y_data and subject_data merge the previous datasets to further analysis.
+features contains the correct names for the x_data dataset.
+
+alldata merges x_data, y_data and subject_data in a big dataset.
+averages_data contains the data that will be stored in the .txt file.
